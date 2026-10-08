@@ -6,9 +6,7 @@
 [![Status: Thesis Freeze](https://img.shields.io/badge/Status-Thesis%20Frozen%20(Audited)-success.svg)](data/processed/detection/final_thesis_results/)
 
 **Author:** Ayush Shekhar  
-**Degree:** M.Tech in Computer Science & Engineering (AI & Data Science)  
-**Institution:** School of Computer Engineering, KIIT Deemed to be University  
-**Supervisor / Department:** Department of Computer Science & Engineering  
+ 
 
 ---
 
@@ -222,10 +220,7 @@ If you utilize this codebase, benchmark datasets, or sliding-window pre-inferenc
 @mastersthesis{shekhar2026emojijailbreak,
   author       = {Ayush Shekhar},
   title        = {Detection and Analysis of Emoji-Based Jailbreak Attacks in Large Language Models},
-  school       = {School of Computer Engineering, KIIT Deemed to be University},
-  year         = {2026},
-  type         = {M.Tech Thesis},
-  address      = {Bhubaneswar, Odisha, India}
+  
 }
 ```
 
