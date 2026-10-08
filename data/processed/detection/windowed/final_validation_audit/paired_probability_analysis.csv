@@ -1,0 +1,2 @@
+comparison,global_mean,windowed_mean,mean_difference,std_difference,t_statistic,p_value_ttest,wilcoxon_stat,p_value_wilcoxon,bootstrap_recall_diff_mean,bootstrap_recall_diff_ci_95
+Safety-Policy Long Padding Harmful Probability,0.256268332349264,0.5499569549930263,0.2936886226437624,0.11533909807285894,25.335423532365333,4.621973523987932e-45,0.0,3.8965598450959084e-18,0.6576700000000001,"[0.560, 0.750]"

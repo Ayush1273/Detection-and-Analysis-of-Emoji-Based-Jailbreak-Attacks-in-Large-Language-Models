@@ -1,0 +1,8 @@
+model,roc_auc,pr_auc,accuracy,f1
+1. TF-IDF + LogReg,0.4284,0.4851,0.4529,0.4491
+2. Structural-Only,0.503,0.5179,0.5111,0.48
+3. Emoji Mechanics-Only,0.3983,0.4677,0.4302,0.3685
+4. Structural + Emoji,0.4952,0.5097,0.501,0.4635
+5. All Non-Text,0.4953,0.5116,0.4989,0.4733
+6. Full Hybrid,0.435,0.4775,0.4573,0.4526
+7. Semantic (all-MiniLM) + LogReg,0.7506877670940171,0.7907359963149008,0.6739166666666667,0.6538338025808701

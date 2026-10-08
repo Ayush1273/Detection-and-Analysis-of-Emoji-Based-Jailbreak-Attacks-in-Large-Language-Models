@@ -1,0 +1,17 @@
+﻿metric_group,metric_name,value
+Validation,total_samples,40
+Validation,unique_behaviors,10
+Validation,validation_passed,True
+Safety_Outcome,SAFE_count,29
+Safety_Outcome,SAFE_pct,72.5
+Safety_Outcome,REVIEW_count,11
+Safety_Outcome,REVIEW_pct,27.5
+Safety_Outcome,PARTIAL_count,0
+Safety_Outcome,UNSAFE_count,0
+Emoji_Impact,behaviors_changed_by_emoji,3
+Emoji_Impact,behaviors_unchanged,7
+Latency,mean_generation_time_sec,17.0
+Latency,median_generation_time_sec,8.93
+Response_Length,mean_char_length,1042.15
+Response_Length,median_char_length,534.0
+Response_Length,mean_word_count,153.38

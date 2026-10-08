@@ -1,0 +1,3 @@
+model,global_latency_ms,windowed_latency_ms,windowed_p95_ms,mean_windows,latency_multiplier,device
+all-MiniLM-L6-v2,12.59,12.82,14.5,1.0,1.018,"CPU (Intel / AMD x86_64, single-threaded PyTorch)"
+Safety-Policy-MiniLM,25.38,25.21,30.08,1.03,0.993,"CPU (Intel / AMD x86_64, single-threaded PyTorch)"

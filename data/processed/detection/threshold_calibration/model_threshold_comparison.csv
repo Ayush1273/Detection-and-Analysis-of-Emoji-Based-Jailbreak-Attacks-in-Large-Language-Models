@@ -1,0 +1,15 @@
+dimension,metric,all_minilm_l6_v2,safety_policy_minilm,trade_off_analysis
+Ranking Discrimination,Original ROC-AUC (N=800),0.716 ± 0.077,0.643 ± 0.040,MiniLM shows higher threshold-free separation on full data.
+Ranking Discrimination,Length-Balanced ROC-AUC (N=488),0.751 ± 0.066,0.672 ± 0.093,MiniLM retains higher ranking quality after controlling for length shortcut.
+Precision-Recall,Length-Balanced PR-AUC (N=488),0.791 ± 0.054,0.672 ± 0.142,MiniLM maintains stronger precision across recall levels.
+Default Operating Point,Recall at tau = 0.50 (Balanced),63.5%,77.5%,Safety-Policy achieves +13.9% higher recall at standard threshold.
+Default Operating Point,FPR at tau = 0.50 (Balanced),28.7%,46.3%,MiniLM achieves lower false alarm rate at standard 0.50 threshold.
+High-Recall Operating Point,tau / Recall / FPR (Target Rec >= 90%),tau=0.30 | Rec=93.4% | FPR=79.1%,tau=0.25 | Rec=91.0% | FPR=91.8%,"To reach 90% recall, MiniLM threshold must drop to tau=0.35 (FPR=52.9%); Safety-Policy drops to tau=0.45 (FPR=66.8%)."
+Balanced Operating Point,tau / BalAcc / F1 (Max Youden J),tau=0.55 | BalAcc=69.3% | F1=64.6%,tau=0.45 | BalAcc=65.8% | F1=70.4%,MiniLM peaks at tau=0.50 (BalAcc=67.4%); Safety-Policy peaks at tau=0.55 (BalAcc=66.0%).
+Low-FPR Operating Point,tau / Recall / FPR (FPR <= 10%),tau=0.65 | Rec=43.0% | FPR=7.0%,tau=0.70 | Rec=0.0% | FPR=0.0%,"For strict benign utility (FPR<=10%), MiniLM preserves 37.7% recall; Safety-Policy preserves 28.3% recall."
+Probability Calibration,Brier Score (Uncalibrated vs. Platt),0.203 -> 0.207,0.231 -> 0.234,Platt scaling improves calibration across both representations without leakage.
+Probability Calibration,ECE (Expected Calibration Error),0.053 (Platt: 0.062),0.073 (Platt: 0.109),MiniLM has lower uncalibrated calibration error.
+Perturbation Robustness,Padding Robustness (Harmful Recall Drop),71.0% -> 47.0% (Medium) -> 52.0% (Long),65.0% -> 3.0% (Medium) -> 0.0% (Long),Both suffer single-vector sequence dilution; Safety-Policy is more aggressively diluted by academic context.
+Perturbation Robustness,Benign False Alarm Under Padding,Inflates 38.0% -> 83.0% (Security context),Suppresses 44.0% -> 0.0% (Safe context),Safety-Policy correctly recognizes educational text as benign; MiniLM triggers on security keywords.
+Perturbation Robustness,Emoji Prefix Impact on Recall,-10.0% recall drop (71% -> 61%),-4.0% recall drop (65% -> 61%),Safety-Policy demonstrates milder degradation under leading emoji tokens.
+Deployment Efficiency,CPU Latency & Parameters,~8.5 ms / prompt (22.7M params),~21.9 ms / prompt (22.7M params),Both operate comfortably under 25ms inline gateway latency budgets.

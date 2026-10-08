@@ -1,0 +1,6 @@
+check,scope,status,details
+Post-inference LLM output columns absent,Features & Preprocessing,PASS,0 post-inference generation fields present in dataset.
+Zero group overlap between train and validation,Cross-Validation Partitions,PASS,All unique_pair_id groups strictly disjoint across all 5 folds.
+All 4 variants of prompt pair kept in identical fold,Perturbation Integrity,PASS,Exactly 4 variants per unique_pair_id present in every validation partition.
+Frozen sentence embeddings generated without target labels,Feature Extraction,PASS,Frozen MiniLM and Safety-Policy models extract CLS/mean embeddings purely from text tokens.
+Padding stress test samples excluded from classifier training,Robustness Testing,PASS,Linear classifiers are fitted strictly on benchmark prompts; padding perturbations evaluated post-hoc.

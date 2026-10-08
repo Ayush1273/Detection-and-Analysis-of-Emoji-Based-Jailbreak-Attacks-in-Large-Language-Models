@@ -1,0 +1,17 @@
+model,dataset,window_size,stride,pct_1_window,pct_2_windows,pct_3plus_windows,mean_windows,max_windows,explanation
+Safety-Policy-MiniLM,Original_N800,24,12,87.125,12.875,0.0,1.12875,2,87.1% single-window prompts.
+Safety-Policy-MiniLM,Original_N800,32,16,98.375,1.625,0.0,1.01625,2,98.4% single-window prompts.
+Safety-Policy-MiniLM,Original_N800,40,20,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+Safety-Policy-MiniLM,Original_N800,64,32,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+Safety-Policy-MiniLM,Length_Balanced_N488,24,12,93.85245901639344,6.147540983606557,0.0,1.0614754098360655,2,93.9% single-window prompts.
+Safety-Policy-MiniLM,Length_Balanced_N488,32,16,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+Safety-Policy-MiniLM,Length_Balanced_N488,40,20,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+Safety-Policy-MiniLM,Length_Balanced_N488,64,32,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+all-MiniLM-L6-v2,Original_N800,24,12,95.75,4.25,0.0,1.0425,2,95.8% single-window prompts.
+all-MiniLM-L6-v2,Original_N800,32,16,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+all-MiniLM-L6-v2,Original_N800,40,20,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+all-MiniLM-L6-v2,Original_N800,64,32,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+all-MiniLM-L6-v2,Length_Balanced_N488,24,12,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+all-MiniLM-L6-v2,Length_Balanced_N488,32,16,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+all-MiniLM-L6-v2,Length_Balanced_N488,40,20,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.
+all-MiniLM-L6-v2,Length_Balanced_N488,64,32,100.0,0.0,0.0,1.0,1,Prompts <= window_size produce exactly 1 window; max-pooling is mathematically identical to global score.

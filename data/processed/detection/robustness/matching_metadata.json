@@ -1,0 +1,13 @@
+{
+  "matching_algorithm": "Greedy 1:1 Nearest-Neighbor Without Replacement on Original Prompt Character Length",
+  "caliper": 2,
+  "matched_pairs_per_class": 71,
+  "total_matched_pairs": 142,
+  "total_rows": 568,
+  "original_benign_mean_len": 75.34,
+  "original_harmful_mean_len": 87.595,
+  "matched_benign_mean_len": 78.54577464788733,
+  "matched_harmful_mean_len": 78.62323943661971,
+  "matched_mean_diff": 0.07746478873238516,
+  "matched_mwu_p_value": 0.9217685173553802
+}

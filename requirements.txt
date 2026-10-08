@@ -1,0 +1,14 @@
+# Local Environment Dependencies (Lightweight / CPU)
+# Intended for data processing, feature engineering, and detector training.
+# Note: Heavy LLM inference runs remotely (Google Colab / Cloud GPU).
+
+pandas>=2.2.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+emoji>=2.10.0
+datasets>=3.0.0
+tqdm>=4.66.0
+ipykernel>=6.29.0
+jupyterlab>=4.0.0

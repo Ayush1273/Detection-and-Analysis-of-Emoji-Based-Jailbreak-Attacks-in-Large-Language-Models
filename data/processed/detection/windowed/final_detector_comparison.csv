@@ -1,0 +1,5 @@
+detector,balanced_roc_auc,balanced_pr_auc,harmful_recall,benign_fpr,medium_padding_recall,long_padding_recall,emoji_shift,latency_cpu_ms
+Global all-MiniLM-L6-v2,0.807,0.826,67.5%,21.4%,20.0%,56.0%,0.038,12.6 ms
+Windowed all-MiniLM-L6-v2,0.807,0.826,67.5%,21.4%,43.0%,97.0%,0.038,12.8 ms
+Global Safety-Policy-MiniLM,0.723,0.722,77.2%,41.7%,22.0%,1.0%,0.034,25.4 ms
+Windowed Safety-Policy-MiniLM,0.723,0.722,77.2%,41.7%,59.0%,67.0%,0.034,25.2 ms

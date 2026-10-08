@@ -1,0 +1,15 @@
+ablation_type,model,window_size,stride,aggregation,roc_auc,pr_auc,balanced_accuracy,harmful_recall,benign_fpr,f1,long_padding_harmful_recall,long_padding_benign_fpr
+Window Size (W) Ablation,Safety-Policy-MiniLM,24,12,max,0.7319,0.7276,0.6795,0.7846,0.4256,0.7115,0.69,0.36
+Window Size (W) Ablation,all-MiniLM-L6-v2,24,12,max,0.8071,0.8256,0.7304,0.675,0.2141,0.7086,,
+Window Size (W) Ablation,Safety-Policy-MiniLM,32,16,max,0.7228,0.7219,0.6774,0.7721,0.4173,0.7071,0.67,0.32
+Window Size (W) Ablation,all-MiniLM-L6-v2,32,16,max,0.8071,0.8256,0.7304,0.675,0.2141,0.7086,,
+Window Size (W) Ablation,Safety-Policy-MiniLM,40,20,max,0.7228,0.7219,0.6774,0.7721,0.4173,0.7071,0.61,0.3
+Window Size (W) Ablation,all-MiniLM-L6-v2,40,20,max,0.8071,0.8256,0.7304,0.675,0.2141,0.7086,,
+Window Size (W) Ablation,Safety-Policy-MiniLM,64,32,max,0.7228,0.7219,0.6774,0.7721,0.4173,0.7071,0.48,0.22
+Window Size (W) Ablation,all-MiniLM-L6-v2,64,32,max,0.8071,0.8256,0.7304,0.675,0.2141,0.7086,,
+Aggregation Function Ablation,Safety-Policy-MiniLM,32,16,max,0.7228,0.7219,0.6774,0.7721,0.4173,0.7071,0.67,0.32
+Aggregation Function Ablation,all-MiniLM-L6-v2,32,16,max,0.8071,0.8256,0.7304,0.675,0.2141,0.7086,,
+Aggregation Function Ablation,Safety-Policy-MiniLM,32,16,mean,0.7228,0.7219,0.6774,0.7721,0.4173,0.7071,0.14,0.02
+Aggregation Function Ablation,all-MiniLM-L6-v2,32,16,mean,0.8071,0.8256,0.7304,0.675,0.2141,0.7086,,
+Aggregation Function Ablation,Safety-Policy-MiniLM,32,16,top_k,0.7228,0.7219,0.6774,0.7721,0.4173,0.7071,0.31,0.11
+Aggregation Function Ablation,all-MiniLM-L6-v2,32,16,top_k,0.8071,0.8256,0.7304,0.675,0.2141,0.7086,,
